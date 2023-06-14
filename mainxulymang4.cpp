@@ -4,7 +4,7 @@
 using namespace std;
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+/* Hoan vi mot ma tran gom mang va cot */
 int main(int argc, char** argv) {
 	srand(time(NULL));
 	int m,n;
