@@ -1,0 +1,24 @@
+#Viết chương trình tìm số lớn nhất trong một ma trận 2 chiều ngẫu nhiên với số hàng và số cột nhập từ bàn phím trong Python?
+import random
+
+# Nhập số hàng và số cột từ bàn phím
+rows = int(input("Nhập số hàng của ma trận: "))
+cols = int(input("Nhập số cột của ma trận: "))
+
+# Khởi tạo ma trận ngẫu nhiên
+matrix = [[random.randint(1, 100) for j in range(cols)] for i in range(rows)]
+
+# In ma trận
+print("Ma trận:")
+for row in matrix:
+    print(row)
+
+# Tìm số lớn nhất trong ma trận
+max_num = matrix[0][0]
+for i in range(rows):
+    for j in range(cols):
+        if matrix[i][j] > max_num:
+            max_num = matrix[i][j]
+
+# In kết quả
+print("Số lớn nhất trong ma trận là:", max_num)
